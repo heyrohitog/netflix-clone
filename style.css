@@ -118,15 +118,11 @@ margin-top: 20px;
     width: 100%;
     justify-content: center;
 }
-
-.second .col-left{
-    
-    color: #fff;
-}
 .second{
     display:flex;
     justify-content:center;
     padding: 20px 40px;
+    color: #fff;
 }
 .second .col-left h1{
     font-size: 48px;
@@ -146,3 +142,62 @@ margin-top: 20px;
     margin-left: 108px;
 }
 
+#third{
+    display:flex;
+    justify-content:center;
+    padding: 50px 40px;
+    color: #fff;
+    
+}
+#third .col-right h1{
+    width: 559px;
+    font-size: 48px;
+    padding-top: 163px;
+    
+}
+#third .col-right p{
+    font-size: 21px;
+    width: 505px;
+    margin-top: 20px;
+}
+#third .col-left .mobile-frame{
+    height: 450px;
+}
+#third .col-left .card{
+    display: flex;
+    border: 2px solid #636363;
+    width: 307px;
+    margin-left: 155px;
+    position: absolute;
+    margin-top: -139px;
+    padding: 8px;
+    border-radius: 10px;
+    background: #000;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#fourth{
+    display:flex;
+    justify-content:center;
+    padding: 20px 40px;
+    color: #fff;
+}
+#fourth .col-left h1{
+    font-size: 48px;
+    padding-top: 163px;
+}
+#fourth .col-left p{
+    font-size: 21px;
+    width: 498px;
+}
+.vido{
+    position: absolute;
+    margin-top: 57px;
+    z-index: -1;
+    margin-left: 229px;
+    width: 390px;
+}
+.mac img{
+    margin-left: 108px;
+}
