@@ -1,13 +1,34 @@
 *{
     padding: 0;
     margin: 0;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: netflix_regular;
+}
+@font-face {
+    font-family: netflix_bold;
+    src: url(/assets/Fonts/NetflixSans-Bold.woff2);
 }
 
+@font-face {
+    font-family: netflix_regular;
+    src: url(/assets/Fonts/NetflixSans-Regular.woff2);
+}
+
+@font-face {
+    font-family: netflix_medium;
+    src: url(/assets/Fonts/NetflixSans-Medium.woff2);
+}
+
+@font-face {
+    font-family: netflix_light;
+    src: url(/assets/Fonts/NetflixSans-Light.woff2);
+}
 .archivo-black-regular {
     font-family: "Archivo Black", sans-serif;
     font-weight: 400;
     font-style: normal;
+}
+h1{
+    font-family: netflix_bold;
 }
   
 body{
@@ -62,9 +83,9 @@ body{
     color: #fff;
 }
 .content h1{
-    font-size: 42px;
+    font-size: 48px;
     font-weight: 600;
-    font-family: "Archivo Black", sans-serif;
+    font-family: netflix_bold;
 }
 .content h6{
 font-weight: 400;
@@ -131,6 +152,7 @@ margin-top: 20px;
 .second .col-left p{
     font-size: 21px;
     width: 498px;
+    margin-top: 20px;
 }
 .vdo{
     position: absolute;
@@ -180,16 +202,17 @@ margin-top: 20px;
 #fourth{
     display:flex;
     justify-content:center;
-    padding: 20px 40px;
+    padding: 40px;
     color: #fff;
 }
 #fourth .col-left h1{
     font-size: 48px;
-    padding-top: 163px;
+    margin-top: 163px;
 }
 #fourth .col-left p{
     font-size: 21px;
     width: 498px;
+    margin-top: 20px;
 }
 .vido{
     position: absolute;
@@ -200,4 +223,129 @@ margin-top: 20px;
 }
 .mac img{
     margin-left: 108px;
+}
+#fifth{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    padding: 60px;
+}
+#fifth .col-left img{
+    width: 560px;
+}
+#fifth .col-right{
+    align-items: center;
+    padding-left: 20px;
+}
+#fifth .col-right h1{
+    font-size: 48px;
+    margin-top: 114px;
+}
+#fifth .col-right p{
+    font-size: 24px;
+    margin-top: 20px;
+    width: 572px;
+}
+#sixth{
+    text-align: center;
+    padding: 60px;
+    color: #fff;
+}
+#sixth h1{
+    font-size: 48px;    
+}
+.accordion-section{
+    width: 66%;
+    margin: 20px auto;
+}
+.accordion-section button{
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  /* Styling the accordion buttons */
+.accordion{
+    width: 100%;
+    background-color: #2d2d2d;
+    color: #fff;
+    font-size: 24px;
+    padding: 1.5rem;
+    margin-bottom: 4px;
+    text-align: left;
+    font-weight: 400;
+    transition: 0.4s;
+    /*  To push the plus sign to the right  */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.accordion:hover{
+    background: #4d4d4d;
+}
+  /* adding the "plus" sign (+) */ 
+.accordion::after{
+    content: '\02795';
+    font-size: 28px;
+    color: #ffffff;
+}
+  
+.panel{
+    background-color: #2d2d2d;
+    color: #fff;
+    margin-bottom: 4px;
+    overflow: hidden;
+    text-align: left;
+    
+}
+.panel > p {
+    font-size: 24px;
+    padding: 1.5rem;
+}
+.panel-closed{
+    max-height: 0;
+    overflow: hidden;
+}
+.panel-open{
+    max-height: 700px;
+}
+.accordion-active::after {
+    content: "\274C";
+}
+.panel{
+    transition: max-height .33s cubic-bezier(.5,0,.1,1);
+}
+.form-section p{
+    font-size: 20px;
+    margin-top: 40px;
+}
+footer{
+    color: #b3b3b3;
+    padding: 4.5rem 20.5rem;
+    display: block;
+    font-size: 14px;
+
+}
+footer .links{
+    display: flex;
+    justify-content: space-between;
+    max-width: 80%;
+    
+}
+footer .links ul{
+    margin: 20px 0px;
+    
+}
+footer .links ul li{
+    list-style: none;
+    margin: 20px 0px;
+    
+}
+footer .links ul li a{
+    color: #b3b3b3;
+}
+footer .lang-selector{
+    margin-bottom: 40px;
+}
+footer p a{
+    color: #b3b3b3;
 }
